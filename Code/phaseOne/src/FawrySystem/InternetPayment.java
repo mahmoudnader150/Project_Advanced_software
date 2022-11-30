@@ -2,7 +2,7 @@ package FawrySystem;
 
 public class InternetPayment extends Service{
     @Override
-    String getDiscription() {
+    public String getDiscription() {
         return super.getDiscription();
     }
 }

@@ -6,7 +6,7 @@ public class Service {
     Service(ServiceProvider obj){
         this.obj = obj;
     }
-    String getDiscription(){
+    public String getDiscription(){
         return this.discription;
     }
 

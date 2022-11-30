@@ -1,13 +1,13 @@
 package FawrySystem;
 
 public class Service {
-    String discription;
+    String description;
     ServiceProvider obj;
     Service(ServiceProvider obj){
         this.obj = obj;
     }
-    public String getDiscription(){
-        return this.discription;
+    public String getDescription(){
+        return this.description;
     }
 
 }

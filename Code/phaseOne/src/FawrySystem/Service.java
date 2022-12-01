@@ -1,6 +1,7 @@
 package FawrySystem;
 
-public class Service {
+public abstract class Service {
+    Double cost;
     String description;
     ServiceProvider obj;
     Service(ServiceProvider obj){

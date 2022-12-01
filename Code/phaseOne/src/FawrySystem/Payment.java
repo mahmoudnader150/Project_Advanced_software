@@ -15,5 +15,5 @@ abstract public class Payment {
     abstract Boolean confirmPayment();
 
     /*pay the bill*/
-    void payBill()
+    abstract void payBill();
 }

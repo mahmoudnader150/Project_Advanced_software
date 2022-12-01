@@ -7,6 +7,7 @@ public class CreditCardPayment extends Payment {
         this.customerWallet = customerWallet;
     }
 
+
     /*method for payment confirmation*/
     @Override
     Boolean confirmPayment(){
@@ -21,7 +22,9 @@ public class CreditCardPayment extends Payment {
         return false;
     }
 
+
     /*method for comparing cost and amount*/
+    @Override
     Boolean checkAmount(){
         if(this.service.cost * this.discount.getPercent() <=customerWallet.amount && this.confirmPayment()){
             return true;
@@ -29,10 +32,13 @@ public class CreditCardPayment extends Payment {
         return false;
     }
 
+
     /*decrement money amount*/
+    @Override
     void payBill(){
         if(checkAmount()){
             this.customerWallet.amount -=this.service.cost * this.discount.percent;
+            System.out.println("The Price after Discount : "+(this.service.cost * this.discount.percent));
         }
     }
 

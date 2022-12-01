@@ -1,8 +1,13 @@
 package FawrySystem;
 
-abstract public class Discount {
+public abstract class Discount {
     public String description;
     public Double percent;
+    public Boolean state;
+
+    Discount(){
+       this.state = false;
+    }
 
     public String getDescription() {
         return description;

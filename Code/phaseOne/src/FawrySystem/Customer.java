@@ -3,7 +3,7 @@ package FawrySystem;
 public class Customer {
     public String userName, email, password;
     public Wallet wallet;
-    public Payment p1;
+    public Payment p1 ;
 
     public String getUserName() {
         return userName;
@@ -22,12 +22,15 @@ public class Customer {
         this.email = email;
     }
 
-    public Payment payBills() {
-        return p1;
-    }
 
     public void setP1(Payment p1) {
         this.p1 = p1;
+    }
+
+    public Customer(String userName, String email, String password) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
     }
 
     public String getPassword() {
@@ -45,4 +48,7 @@ public class Customer {
     public void setWallet(Wallet wallet) {
         this.wallet = wallet;
     }
+
+
+
 }

@@ -1,8 +1,14 @@
 package FawrySystem;
 
 public class AddingDiscount {
-    public Discount createDiscount()
+
+    public Discount createOverallDiscount()
     {
-        return new Discount();
+        return new OverallDiscount();
+    }
+
+    public Discount createSpecificDiscount()
+    {
+        return new SpecificDiscount();
     }
 }

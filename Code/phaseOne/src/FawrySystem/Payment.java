@@ -1,9 +1,8 @@
 package FawrySystem;
 
-abstract public class Payment {
+public abstract class Payment {
     public Service service;
     public Discount discount;
-
 
     /*Payment Constructor*/
     Payment(Service service , Discount discount){
@@ -14,6 +13,9 @@ abstract public class Payment {
     /*confirm method for payment process*/
     abstract Boolean confirmPayment();
 
+    /**/
+    abstract Boolean checkAmount();
+
     /*pay the bill*/
-    void payBill()
+    abstract void payBill();
 }

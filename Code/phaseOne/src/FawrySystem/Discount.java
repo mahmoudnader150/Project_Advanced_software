@@ -1,6 +1,6 @@
 package FawrySystem;
 
-abstract public class Discount {
+public abstract class Discount {
     public String description;
     public Double percent;
 

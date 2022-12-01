@@ -21,7 +21,9 @@ public class CashPayment extends Payment{
         return false;
     }
 
+
     /*method for comparing cost and amount*/
+    @Override
     Boolean checkAmount(){
        if(this.service.hasDiscount()){
            if(this.service.cost * this.discount.getPrecent() <= this.amount && this.confirmPayment() ){
@@ -35,6 +37,7 @@ public class CashPayment extends Payment{
     }
 
     /*decrement money amount*/
+    @Override
     void payBill(){
         if(checkAmount()){
             this.amount-=this.service.cost * this.discount.percent;

@@ -27,6 +27,12 @@ public class Customer {
         this.p1 = p1;
     }
 
+    public Customer(String userName, String email, String password) {
+        this.userName = userName;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -42,4 +48,7 @@ public class Customer {
     public void setWallet(Wallet wallet) {
         this.wallet = wallet;
     }
+
+
+
 }

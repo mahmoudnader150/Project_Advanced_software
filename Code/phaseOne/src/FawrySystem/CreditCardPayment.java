@@ -38,6 +38,7 @@ public class CreditCardPayment extends Payment {
     void payBill(){
         if(checkAmount()){
             this.customerWallet.amount -=this.service.cost * this.discount.percent;
+            System.out.println("The Price after Discount : "+(this.service.cost * this.discount.percent));
         }
     }
 

@@ -26,7 +26,7 @@ public class CashPayment extends Payment{
     @Override
     Boolean checkAmount(){
        if(this.service.hasDiscount()){
-           if(this.service.cost * this.discount.getPrecent() <= this.amount && this.confirmPayment() ){
+           if(this.service.cost * this.discount.getPercent() <= this.amount && this.confirmPayment() ){
                return true;
            }
        }else{
@@ -41,6 +41,7 @@ public class CashPayment extends Payment{
     void payBill(){
         if(checkAmount()){
             this.amount-=this.service.cost * this.discount.percent;
+            System.out.println("The Price after Discount : "+(this.service.cost * this.discount.percent));
         }
     }
 }

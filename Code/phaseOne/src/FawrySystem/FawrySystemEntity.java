@@ -1,13 +1,33 @@
 package FawrySystem;
 
+import java.util.ArrayList;
+
 public class FawrySystemEntity {
-    public Customer[]customers;
-    public ServiceProvider[]serviceProviders;
+    public ArrayList<Customer>customers;
+    public ArrayList<ServiceProvider>serviceProviders;
+    public ArrayList<Service>services;
+
     public Admin admin;
-    public void AddCustomerAcc(Customer c){
+
+    public FawrySystemEntity() {
+        this.customers = new ArrayList<>();
+        this.serviceProviders = new ArrayList<>();
 
     }
-    public Customer[] getCustomerAcc(){
+
+    public void AddCustomerAcc(Customer c){
+        customers.add(c);
+    }
+    public void AddServiceProvider(ServiceProvider sp){
+        serviceProviders.add(sp);
+    }
+    public void AddService(Service s){
+        services.add(s);
+    }
+    public ArrayList<Customer> getCustomerAcc(){
 return customers ;
+    }
+    public ArrayList<Service> getServices(){
+        return services ;
     }
 }

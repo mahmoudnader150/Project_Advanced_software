@@ -5,8 +5,10 @@ public abstract class Service {
     String description;
     ServiceProvider obj;
     Discount discount;
-    Service(ServiceProvider obj){
-        this.obj = obj;
+    Service(/*ServiceProvider obj*/ double cost, String description){
+        this.cost = cost;
+        this.description = description;
+//        this.obj = obj;
     }
 
 

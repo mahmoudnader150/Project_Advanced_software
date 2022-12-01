@@ -14,7 +14,7 @@ public class AdminView {
             password = Main.scanner.nextLine();
 
 
-            if (name.equals(Main.ad.getUserName()) && password.equals(Main.ad.getPassword()) && email.equals(Main.ad.getEmail())
+            if (name.equals(Main.ad.getUserName()) && password.equals(Main.ad.getPassword()) && email.equals(Main.ad.getEmail()))
             {
 return true;
             }

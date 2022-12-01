@@ -1,8 +1,9 @@
 package FawrySystem;
 
 public class InternetPayment extends Service{
-    InternetPayment(ServiceProvider obj) {
-        super(obj);
+
+    public InternetPayment(double cost, String description) {
+        super(cost, description);
     }
 
     @Override

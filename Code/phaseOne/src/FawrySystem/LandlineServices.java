@@ -1,8 +1,9 @@
 package FawrySystem;
 
 public class LandlineServices extends Service{
-    LandlineServices(ServiceProvider obj) {
-        super(obj);
+
+    public LandlineServices(double cost, String description) {
+        super(cost, description);
     }
 
     @Override

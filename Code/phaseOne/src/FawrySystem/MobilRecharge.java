@@ -1,8 +1,9 @@
 package FawrySystem;
 
 public class MobilRecharge extends Service{
-    MobilRecharge(ServiceProvider obj) {
-        super(obj);
+
+    public MobilRecharge(double cost, String description) {
+        super(cost, description);
     }
 
     @Override

@@ -1,8 +1,9 @@
 package FawrySystem;
 
 public class Donations extends Service{
-    Donations(ServiceProvider obj) {
-        super(obj);
+
+    public Donations(double cost, String description) {
+        super(cost, description);
     }
 
     @Override

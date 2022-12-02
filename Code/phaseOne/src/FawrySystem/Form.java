@@ -5,5 +5,6 @@ public abstract class Form {
     Form(IHandler handler){
         this.handler = handler;
     }
-    public abstract void showForm();
+    public abstract void showForm(Service service);
+
 }

@@ -33,11 +33,13 @@ public class CustomerView {
 
             System.out.print("Enter user password: ");
             password = input.nextLine();
+            System.out.print("Enter phone number: ");
+            String number = input.nextLine();
 
             CheckingAccount check = new CheckingAccount();
             if (check.checkAccount(Main.entity, email, password)) {
                 System.out.println("Created account Successfully");
-                Main.entity.AddCustomerAcc(new Customer(username, email, password));
+                Main.entity.AddCustomerAcc(new Customer(username, email, password,number));
                 this.Signin();
                 break;
             } else {
@@ -80,6 +82,7 @@ public class CustomerView {
         choice = sc1.nextInt();
 
         myService = services.get(choice - 1); // Service........
+
         System.out.println("Choose service provider");
         for (int i = 0; i < Main.entity.getServiceProviders().size(); i++)
         {
@@ -90,7 +93,7 @@ public class CustomerView {
         choice1 = sc1.next();
         CustomerController c1 = new CustomerController();
         ServiceProviderFactory myServiceProviderFactory = c1.serviceProviderFactory(choice1);//ServiceProviderFactory...
-        myServiceProviderFactory.setHandlerandForm();
 
+        myServiceProviderFactory.setForm(myService);
     }
 }

@@ -13,9 +13,9 @@ public abstract class ServiceProviderFactory {
     public abstract Form createForm() ;
 //    public abstract IHandler createHandler();
 
-    public void setForm(){
+    public void setForm(Service service){
         f1 = createForm();
-        this.f1.showForm();
+        this.f1.showForm(service);
 //        h1 = createHandler();
     }
 

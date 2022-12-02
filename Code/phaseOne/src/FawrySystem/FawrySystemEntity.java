@@ -6,6 +6,7 @@ public class FawrySystemEntity {
     public ArrayList<Customer>customers;
     public ArrayList<ServiceProviderFactory>serviceProviders;
     public ArrayList<Service>services;
+  //  public Arr
 
     public Admin admin;
 

@@ -5,10 +5,9 @@ public abstract class Payment {
     public Discount discount;
 
     /*Payment Constructor*/
-    Payment(Service service , Discount discount){
-        this.service = service;
-        this.discount = discount;
-    }
+
+
+    public abstract void pay(double amount);
 
     /*confirm method for payment process*/
     abstract Boolean confirmPayment();

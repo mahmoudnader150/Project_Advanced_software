@@ -8,11 +8,7 @@ public class We extends ServiceProviderFactory{
 
     @Override
     public Form createForm() {
-        return new WeForm();
+        return new WeForm(new WeHandler());
     }
 
-    @Override
-    public IHandler createHandler() {
-        return new WeHandler();
-    }
 }

@@ -2,11 +2,15 @@ package FawrySystem;
 
 public class CreditCardPayment extends Payment {
     public Wallet customerWallet;
-    CreditCardPayment(Service service,Discount discount,Wallet customerWallet){
-        super(service,discount);
-        this.customerWallet = customerWallet;
-    }
+    public String name;
+    public String cardNumber;
+    public String cvv;
+    public String dateOfExpiry;
 
+    @Override
+    public void pay(double amount) {
+        System.out.println(amount+" Paid with credit card");
+    }
 
     /*method for payment confirmation*/
     @Override

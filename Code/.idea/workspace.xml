@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d13fbe75-438b-4ca4-99b3-c5f46b2148f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AddingDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AddingDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CashPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CreditCardPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Donations.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Donations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/InternetPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/InternetPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/LandlineServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/LandlineServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/MobilRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/MobilRecharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/OverallDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/OverallDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/ServiceProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/ServiceProviderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/SpecificDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/SpecificDiscount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/We.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/We.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoftwareClassDiagram.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SoftwareClassDiagram_1.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../SoftwareClassDiagram_1.drawio" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IMjjcAwEoFMdTwd30qUeI7CndS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Hussein Mohamed Elmo/Project_Advanced_software/Code",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="FawrySystem" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="FawrySystem.Main" />
+      <module name="Code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d13fbe75-438b-4ca4-99b3-c5f46b2148f7" name="Changes" comment="" />
+      <created>1669998488667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669998488667</updated>
+      <workItem from="1669998489996" duration="32000" />
+      <workItem from="1669998623601" duration="194000" />
+      <workItem from="1669998844713" duration="8616000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

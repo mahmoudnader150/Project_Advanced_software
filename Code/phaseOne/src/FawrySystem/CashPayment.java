@@ -2,9 +2,9 @@ package FawrySystem;
 
 public class CashPayment extends Payment{
     public Double amount;
-    CashPayment(Service service,Discount discount,Double amount){
-        super(service,discount);
-        this.amount = amount;
+    @Override
+    public void pay(double amount) {
+        System.out.println(amount+" Paid cash");
     }
 
     /*method for payment confirmation*/

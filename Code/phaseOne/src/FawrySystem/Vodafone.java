@@ -1,14 +1,18 @@
 package FawrySystem;
 
-public class Vodafone implements ServiceProviderFactory{
-    @Override
-    public Form createForm() {
-        return new VodafoneForm();
+public class Vodafone extends ServiceProviderFactory {
+
+    Vodafone(String name){
+       super(name);
     }
 
     @Override
-    public Handler createHandler() {
-        return new VodafoneHandler() {
-        };
+    public Form createForm() {
+        return new VodafoneForm(new VodafoneHandler());
     }
+
+   /* @Override
+    public IHandler createHandler() {
+        return new VodafoneHandler();
+    }*/
 }

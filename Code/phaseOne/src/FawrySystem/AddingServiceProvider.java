@@ -1,8 +1,8 @@
 package FawrySystem;
 
 public class AddingServiceProvider {
-    public ServiceProvider addServiceProvider(String name)
+   /* public ServiceProviderFactory addServiceProvider(String name)
     {
-        return new ServiceProvider(name);
-    }
+        return new ServiceProviderFactory(name);
+    }*/
 }

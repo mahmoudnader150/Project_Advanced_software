@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class FawrySystemEntity {
     public ArrayList<Customer>customers;
-    public ArrayList<ServiceProvider>serviceProviders;
+    public ArrayList<ServiceProviderFactory>serviceProviders;
     public ArrayList<Service>services;
 
     public Admin admin;
@@ -12,13 +12,15 @@ public class FawrySystemEntity {
     public FawrySystemEntity() {
         this.customers = new ArrayList<>();
         this.serviceProviders = new ArrayList<>();
-
+        this.services = new ArrayList<>();
     }
+
+
 
     public void AddCustomerAcc(Customer c){
         customers.add(c);
     }
-    public void AddServiceProvider(ServiceProvider sp){
+    public void AddServiceProviderFactory (ServiceProviderFactory  sp){
         serviceProviders.add(sp);
     }
     public void AddService(Service s){
@@ -29,5 +31,8 @@ return customers ;
     }
     public ArrayList<Service> getServices(){
         return services ;
+    }
+    public ArrayList<ServiceProviderFactory> getServiceProviders(){
+        return serviceProviders ;
     }
 }

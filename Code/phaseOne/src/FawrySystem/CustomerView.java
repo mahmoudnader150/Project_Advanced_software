@@ -60,6 +60,7 @@ public class CustomerView {
             CheckingAccount check = new CheckingAccount();
             if (check.checkAccount(Main.entity, email, password) == false) {
                 System.out.println("Success login");
+                this.showServices();
                 return true;
             } else {
                 System.out.println("Enter vaild account");
@@ -74,18 +75,22 @@ public class CustomerView {
         for (int i = 0; i < services.size(); i++) {
             System.out.println((i + 1) + "- " + services.get(i).getDescription());
         }
+        Scanner sc1 = new Scanner(System.in);
         int choice;
-        choice = Main.scanner.nextInt();
+        choice = sc1.nextInt();
+
         myService = services.get(choice - 1); // Service........
         System.out.println("Choose service provider");
-        for (int i = 0; i < Main.entity.getServices().size(); i++)
+        for (int i = 0; i < Main.entity.getServiceProviders().size(); i++)
         {
-            System.out.println(Main.entity.getServices().get(i).getDescription());
+            System.out.println((i + 1) + " - " +Main.entity.getServiceProviders().get(i).getName());
         }
         System.out.println("Enter the name of service provider");
-        String SPname;
-        SPname = Main.scanner.nextLine();
+        String choice1;
+        choice1 = sc1.next();
         CustomerController c1 = new CustomerController();
-        ServiceProviderFactory myServiceProviderFactory = c1.ServiceProviderFactory(SPname);//ServiceProviderFactory...
+        ServiceProviderFactory myServiceProviderFactory = c1.serviceProviderFactory(choice1);//ServiceProviderFactory...
+        myServiceProviderFactory.setHandlerandForm();
+
     }
 }

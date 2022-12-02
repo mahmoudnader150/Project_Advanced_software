@@ -2,6 +2,10 @@ package FawrySystem;
 
 public class Customer {
     public String userName, email, password;
+
+
+
+    public String phone;
     public Wallet wallet;
     public Payment p1 ;
 
@@ -27,11 +31,15 @@ public class Customer {
         this.p1 = p1;
     }
 
-    public Customer(String userName, String email, String password) {
+    public Customer(String userName, String email, String password,String phone) {
         this.userName = userName;
         this.email = email;
         this.password = password;
+        this.phone = phone;
     }
+    public String getPhone() {return phone;}
+
+    public void setPhone(String phone) {this.phone = phone;}
 
     public String getPassword() {
         return password;

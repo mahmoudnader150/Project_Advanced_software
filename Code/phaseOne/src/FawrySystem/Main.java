@@ -3,6 +3,7 @@ package FawrySystem;
 import java.util.Scanner;
 
 public class Main {
+    static Customer currentCustomer;
     static Scanner scanner = new Scanner(System.in);
     static Admin ad=new Admin("admin","1234","admin@fawry");
     static FawrySystemEntity entity = new FawrySystemEntity();

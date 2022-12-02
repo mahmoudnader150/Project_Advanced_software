@@ -1,12 +1,12 @@
 package FawrySystem;
 
-public abstract class Discount {
+public abstract class Discount extends Service {
     public String description;
     public Double percent;
     public Boolean state;
     public Service service;
 
-    Discount(Service service){
+    public Discount(Service service){
        this.state = false;
        this.service = service;
     }

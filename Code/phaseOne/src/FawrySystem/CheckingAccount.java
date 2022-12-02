@@ -7,8 +7,12 @@ public class CheckingAccount {
         ArrayList<Customer> customers = e.getCustomerAcc();
         for (int i = 0; i < customers.size(); i++)
         {
-            if(customers.get(i).getEmail().equals(email) && customers.get(i).getPassword().equals(password))
+            if(customers.get(i).getEmail().equals(email) && customers.get(i).getPassword().equals(password)){
+                Main.currentCustomer=customers.get(i);
                 return false;
+
+            }
+
         }
         return true;
     }

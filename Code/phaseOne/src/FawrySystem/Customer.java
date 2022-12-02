@@ -1,11 +1,18 @@
 package FawrySystem;
 
+import java.util.ArrayList;
+
 public class Customer {
     public String userName, email, password;
+    public ArrayList<Service> services;
 
-
-
+boolean fTime;
     public String phone;
+
+    public ArrayList<Service> getServices() {
+        return services;
+    }
+
     public Wallet wallet;
     public Payment p1 ;
 
@@ -31,11 +38,20 @@ public class Customer {
         this.p1 = p1;
     }
 
-    public Customer(String userName, String email, String password,String phone) {
+    public void setfTime(boolean fTime) {
+        this.fTime = fTime;
+    }
+
+    public boolean isfTime() {
+        return fTime;
+    }
+
+    public Customer(String userName, String email, String password, String phone) {
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.phone = phone;
+        this.fTime=false;
     }
     public String getPhone() {return phone;}
 

@@ -1,10 +1,12 @@
 package FawrySystem;
 
 import java.util.ArrayList;
-
+import java.util.*;
+import java.util.Map.Entry;
 public class FawrySystemEntity {
     public ArrayList<Customer>customers;
     public ArrayList<ServiceProviderFactory>serviceProviders;
+    public ArrayList<Entry<Customer,Service>>transactions;
     public ArrayList<Service>services;
   //  public Arr
 
@@ -17,7 +19,11 @@ public class FawrySystemEntity {
     }
 
 
-
+//public void addTransaction(Service s,Customer c){
+//    Entry p1 = new Pair(s,c);
+//transactions.add(Entry{s,c});
+//
+//}
     public void AddCustomerAcc(Customer c){
         customers.add(c);
     }

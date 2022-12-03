@@ -14,7 +14,7 @@ public class CustomerView {
             this.Sigup();
         } else {
             if (this.Signin()) {
-
+                  return;
             }
         }
     }

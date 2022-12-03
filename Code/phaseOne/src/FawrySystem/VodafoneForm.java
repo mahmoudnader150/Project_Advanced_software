@@ -57,7 +57,7 @@ public class VodafoneForm extends Form{
                 }
                 service.pay(p1);
              //   Main.entity.AddService(service);
-            } else if(choice == 2) {
+            }else if(choice == 2) {
                 double amount = 0.0;
                 boolean check = false;
                 while(check==false) {
@@ -72,7 +72,7 @@ public class VodafoneForm extends Form{
                 String transaction = sc2.nextLine();
                 Main.currentCustomer.setRequest(new RefundRequest(transaction, amount));
                 Main.entity.addRequest(Main.currentCustomer.getRequest());
-                //            c1.checkTransaction();
+                // c1.checkTransaction();
             }
             else if(choice==3){
                 for (int i=0;i<Main.entity.getServices().size();i++){

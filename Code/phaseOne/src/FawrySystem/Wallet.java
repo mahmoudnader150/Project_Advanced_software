@@ -1,17 +1,17 @@
 package FawrySystem;
 
 public class Wallet {
-    public float amount;
+    public double amount;
 
     public Wallet() {
-//        this.amount = amount;
+         this.amount = 0;
     }
 
-    public void setAmount(float amount) {
-        this.amount = amount;
+    public void addAmount(double amount) {
+        this.amount += amount;
     }
 
-    public float getAmount() {
+    public double getAmount() {
         return amount;
     }
 }

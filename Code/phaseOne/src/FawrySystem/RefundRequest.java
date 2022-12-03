@@ -33,5 +33,8 @@ public class RefundRequest {
 
     public void update(boolean state) {
         this.state = state;
+        if(state==true){
+            Main.currentCustomer.getWallet().addAmount(this.amount);
+        }
     }
 }

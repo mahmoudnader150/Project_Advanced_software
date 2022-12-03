@@ -64,20 +64,27 @@ public class CustomerView {
                 System.out.println("Success login");
                 System.out.println("1- Check request");
                 System.out.println("2- Show services");
+                System.out.println("3- Show Wallet");
                 int choice = input.nextInt();
-                if(choice == 1)
-                {
+                if(choice == 1) {
                     this.checkMyRequest();
                 }
                 else if(choice == 2) {
                     this.showServices();
+                }else if(choice == 3){
+                    this.walletDetails();
                 }
                 return true;
             } else {
-                System.out.println("Enter vaild account");
+                System.out.println("Enter valid account");
             }
         }
     }
+    public void walletDetails(){
+        System.out.println("Wallet amount is: "+Main.currentCustomer.getWallet().getAmount());
+    }
+
+
     public void checkMyRequest()
     {
         if(Main.currentCustomer.getRequest().isState() == true)
@@ -100,6 +107,7 @@ public class CustomerView {
         choice = sc1.nextInt();
 
         myService = services.get(choice - 1); // Service........
+        //System.out.println(myService.state);
 
         System.out.println("Choose service provider");
         for (int i = 0; i < Main.entity.getServiceProviders().size(); i++)

@@ -30,6 +30,10 @@ public abstract class Service {
         return this.description;
     }
 
-    Boolean hasDiscount(){return this.discount.state;}
+    Boolean hasDiscount(){return this.state;}
+
+    void setDiscount(Boolean state){
+        this.state = state;
+    }
 
 }

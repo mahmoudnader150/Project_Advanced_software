@@ -7,6 +7,7 @@ public class LandlineServices extends Service{
         this.cost = cost;
         this.description = description;
         this.fees = 2.1;
+        this.state = false;
     }
     @Override
     public double getCost() {

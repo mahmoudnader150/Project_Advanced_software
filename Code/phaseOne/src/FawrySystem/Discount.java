@@ -5,7 +5,7 @@ public abstract class Discount extends Service {
 
     public Service service;
     public Discount(Service s1) {
-
+        s1.state = true;
         this.service = s1;
     }
 

@@ -17,6 +17,10 @@ public class Main {
         Service s2 = new MobilRecharge(60.7,"Mobil recharge");
         Service s3 = new InternetPayment(80.5, "Internet payment");
         Service s4 = new Donations(100.5, "Donations");
+
+ /*   //    s1.state = true;
+        s2.state = true;*/
+
         ServiceProviderFactory sp1 = new Vodafone("Vodafone");
         ServiceProviderFactory sp2 = new We("We");
 

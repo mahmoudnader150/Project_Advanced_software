@@ -18,10 +18,12 @@ public class VodafoneForm extends Form{
         while (true) {
             System.out.println("1- Do payment");
             System.out.println("2- Refund request");
-            System.out.println("3- Exit");
+            System.out.println("3- Check Discount");
+            System.out.println("4- Exit");
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
             CustomerController c1 = new CustomerController();
+
             if (choice == 1) {
                 System.out.println("Enter the amount");
                 Scanner sc = new Scanner(System.in);
@@ -36,7 +38,9 @@ public class VodafoneForm extends Form{
 
                 System.out.println("Before: " + service.getCost());
                 p1 = c1.setPaymentMethod(choice);
-                service = c1.setDiscount(service);
+               if(service.state==true){
+                   service = c1.setDiscount(service);
+               }
                 System.out.println("After: " + service.getCost());
 
                 service.pay(p1);
@@ -52,7 +56,16 @@ public class VodafoneForm extends Form{
                 Main.entity.addRequest(Main.currentCustomer.getRequest());
                 //            c1.checkTransaction();
             }
-            else if(choice == 3)
+            else if(choice==3){
+                for (int i=0;i<Main.entity.getServices().size();i++){
+                    if(Main.entity.getServices().get(i).state==true){
+                        System.out.println((Main.entity.getServices().get(i).getDescription() + " has discount"));
+                    }/*else{
+                        System.out.println((Main.entity.getServices().get(i).getDescription() + "has no discount"));
+                    }*/
+                }
+            }
+            else if(choice == 4)
             {
                 return;
             }

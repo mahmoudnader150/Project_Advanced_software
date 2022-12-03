@@ -41,8 +41,8 @@ public class FawrySystemEntity {
             int choice = input.nextInt();
             if(choice == 1){
                 refundRequests.get(i).update(true);
-                System.out.println(refundRequests.get(i).isState());
-                System.out.println(Main.currentCustomer.getRequest().isState());
+//                System.out.println(refundRequests.get(i).isState());
+//                System.out.println(Main.currentCustomer.getRequest().isState());
             }
             else {
                 refundRequests.get(i).update(false);

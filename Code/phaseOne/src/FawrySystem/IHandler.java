@@ -1,5 +1,5 @@
 package FawrySystem;
 
 public interface IHandler {
-    public void FormHandler(CustomerInfo customerInfo);
+    public boolean FormHandler(double amount);
 }

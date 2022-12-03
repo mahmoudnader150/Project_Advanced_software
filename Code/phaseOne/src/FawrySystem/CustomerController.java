@@ -4,6 +4,7 @@ public class CustomerController {
     public Service setDiscount(Service service) {
         if (Main.currentCustomer.isfTime() == false) {
             service = new OverallDiscount(service);
+            System.out.println("First time discount");
             Main.currentCustomer.setfTime(true);
         }
         service = new SpecificDiscount(service);
@@ -29,9 +30,9 @@ public class CustomerController {
     }
 
     public ServiceProviderFactory serviceProviderFactory(String choice) {
-        if (choice.equals("Vodafone")) {
+        if (choice.equals("vodafone")) {
             return new Vodafone("Vodafone");
-        } else if (choice.equals("We")) {
+        } else if (choice.equals("we")) {
             return new We("We");
         }
         return new We("We");

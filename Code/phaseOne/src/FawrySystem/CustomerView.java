@@ -1,6 +1,7 @@
 package FawrySystem;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CustomerView {
@@ -107,16 +108,16 @@ public class CustomerView {
         choice = sc1.nextInt();
 
         myService = services.get(choice - 1); // Service........
-        //System.out.println(myService.state);
 
         System.out.println("Choose service provider");
         for (int i = 0; i < Main.entity.getServiceProviders().size(); i++)
         {
-            System.out.println((i + 1) + " - " +Main.entity.getServiceProviders().get(i).getName());
+            System.out.println(Main.entity.getServiceProviders().get(i).getName());
         }
         System.out.println("Enter the name of service provider");
         String choice1;
         choice1 = sc1.next();
+        choice1 = choice1.toLowerCase();
         CustomerController c1 = new CustomerController();
         ServiceProviderFactory myServiceProviderFactory = c1.serviceProviderFactory(choice1);//ServiceProviderFactory...
 

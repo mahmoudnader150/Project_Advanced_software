@@ -10,16 +10,12 @@ public class FawrySystemEntity {
     public ArrayList<Service>services;
     public ArrayList<RefundRequest>refundRequests;
 
-    //  public Arr
-
-//    public Admin admin;
 
     public FawrySystemEntity() {
         this.customers = new ArrayList<>();
         this.serviceProviders = new ArrayList<>();
         this.services = new ArrayList<>();
         this.refundRequests = new ArrayList<>();
-//        this.admin = new Admin();
     }
 
     public void addRequest(RefundRequest refundRequest)
@@ -41,19 +37,12 @@ public class FawrySystemEntity {
             int choice = input.nextInt();
             if(choice == 1){
                 refundRequests.get(i).update(true);
-//                System.out.println(refundRequests.get(i).isState());
-//                System.out.println(Main.currentCustomer.getRequest().isState());
             }
             else {
                 refundRequests.get(i).update(false);
             }
         }
     }
-//public void addTransaction(Service s,Customer c){
-//    Entry p1 = new Pair(s,c);
-//transactions.add(Entry{s,c});
-//
-//}
     public void AddCustomerAcc(Customer c){
         customers.add(c);
     }

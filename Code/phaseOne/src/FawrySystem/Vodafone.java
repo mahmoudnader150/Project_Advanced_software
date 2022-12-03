@@ -11,8 +11,4 @@ public class Vodafone extends ServiceProviderFactory {
         return new VodafoneForm(new VodafoneHandler());
     }
 
-   /* @Override
-    public IHandler createHandler() {
-        return new VodafoneHandler();
-    }*/
 }

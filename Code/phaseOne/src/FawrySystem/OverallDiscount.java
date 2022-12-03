@@ -19,6 +19,7 @@ public class OverallDiscount extends Discount{
     @Override
     public double getCost() {
         double overallCost = service.getCost();
+        String.format("%.5f", overallCost);
         return (overallCost-(0.1*overallCost));
     }
 }

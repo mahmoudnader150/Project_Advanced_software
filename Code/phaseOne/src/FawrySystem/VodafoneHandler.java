@@ -3,11 +3,17 @@ package FawrySystem;
 public class VodafoneHandler implements IHandler{
 
     @Override
-    public void FormHandler(CustomerInfo customerInfo) {
+    public boolean FormHandler(double amount) {
       /* System.out.println("Vodafone Handler");
          System.out.println("----------------");*/
-       if(customerInfo.amount>0 && customerInfo.number.length()==1){
-           System.out.println("S");
+       if(amount<0){
+           System.out.println("Invalid amount");
+           return false;
        }
+       if(amount<10){
+           System.out.println("Minimum amount is 10$");
+           return false;
+       }
+       return true;
     }
 }

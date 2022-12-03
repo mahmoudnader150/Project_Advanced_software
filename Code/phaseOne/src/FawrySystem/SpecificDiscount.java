@@ -20,7 +20,8 @@ public class SpecificDiscount extends Discount {
     }
     @Override
     public double getCost() {
-        double overallCost = super.getCost();
-        return overallCost-(this.percent*overallCost);
+        double overallCost = service.getCost();
+        String.format("%.5f",overallCost);
+        return overallCost-(0.3*overallCost);
     }
 }

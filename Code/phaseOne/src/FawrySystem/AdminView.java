@@ -1,5 +1,6 @@
 package FawrySystem;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class AdminView {
@@ -48,10 +49,12 @@ public class AdminView {
             }else if(choice==2){
                 for(int i=0;i<Main.entity.getServices().size();i++){
                     System.out.print("Do you want to add discount on : ");
-                    System.out.println(Main.entity.getServices().get(i).getDescription());
-                    Scanner isa_the_final_scanner = new Scanner(System.in);
+                    System.out.print(Main.entity.getServices().get(i).getDescription());
+                    System.out.println(" yes/no");
+                    Scanner scs = new Scanner(System.in);
                     String thechoice;
-                    thechoice = isa_the_final_scanner.nextLine();
+                    thechoice = scs.nextLine();
+                    thechoice = thechoice.toLowerCase();
                     if(thechoice.equals("yes")){
                         Main.entity.getServices().get(i).state=true;
                     }else{

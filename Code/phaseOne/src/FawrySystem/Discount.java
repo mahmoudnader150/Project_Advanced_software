@@ -1,16 +1,17 @@
 package FawrySystem;
 
 public abstract class Discount extends Service {
-    public String description;
-    public Double percent;
-    public Boolean state;
-    public Service service;
 
-    public Discount(Service service){
-       this.state = false;
-       this.service = service;
+
+    public Service service;
+    public Discount(Service s1) {
+
+        this.service = s1;
     }
+
+
     public double getCost(){
+
         return service.getCost();
     }
     public String getDescription() {
@@ -21,7 +22,7 @@ public abstract class Discount extends Service {
 
 
     public Double getPercent() {
-        return percent;
+        return this.getCost();
     }
 
     abstract public void setPercent(Double percent);

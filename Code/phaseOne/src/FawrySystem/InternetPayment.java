@@ -3,7 +3,8 @@ package FawrySystem;
 public class InternetPayment extends Service{
 
     public InternetPayment(double cost, String description) {
-        super(cost, description);
+        this.cost = cost;
+        this.description = description;
         this.fees = 3.0;
     }
 

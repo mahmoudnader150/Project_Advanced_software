@@ -2,8 +2,10 @@ package FawrySystem;
 
 public class LandlineServices extends Service{
 
+
     public LandlineServices(double cost, String description) {
-        super(cost, description);
+        this.cost = cost;
+        this.description = description;
         this.fees = 2.1;
     }
     @Override

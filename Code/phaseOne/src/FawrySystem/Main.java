@@ -17,7 +17,6 @@ public class Main {
         Service s2 = new MobilRecharge(60.7,"Mobil recharge");
         Service s3 = new InternetPayment(80.5, "Internet payment");
         Service s4 = new Donations(100.5, "Donations");
-
         ServiceProviderFactory sp1 = new Vodafone("Vodafone");
         ServiceProviderFactory sp2 = new We("We");
 
@@ -51,8 +50,12 @@ public class Main {
                 CustomerView obj = new CustomerView();
                 obj.Menu();
             }
-
-            if(choice == 3)
+            else if(choice == 2)
+            {
+                AdminView adminView = new AdminView();
+                adminView.menu();
+            }
+            else if(choice == 3)
             {
                 break;
             }

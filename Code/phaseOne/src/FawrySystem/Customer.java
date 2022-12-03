@@ -6,15 +6,24 @@ public class Customer {
     public String userName, email, password;
     public ArrayList<Service> services;
 
-boolean fTime;
+    boolean fTime;
     public String phone;
 
     public ArrayList<Service> getServices() {
         return services;
     }
 
-    public Wallet wallet;
-    public Payment p1 ;
+    public Wallet wallet = new Wallet();
+    public Payment p1;
+    public RefundRequest request;
+
+    public RefundRequest getRequest() {
+        return request;
+    }
+
+    public void setRequest(RefundRequest request) {
+        this.request = request;
+    }
 
     public String getUserName() {
         return userName;
@@ -51,11 +60,16 @@ boolean fTime;
         this.email = email;
         this.password = password;
         this.phone = phone;
-        this.fTime=false;
+        this.fTime = false;
     }
-    public String getPhone() {return phone;}
 
-    public void setPhone(String phone) {this.phone = phone;}
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     public String getPassword() {
         return password;
@@ -72,7 +86,6 @@ boolean fTime;
     public void setWallet(Wallet wallet) {
         this.wallet = wallet;
     }
-
 
 
 }

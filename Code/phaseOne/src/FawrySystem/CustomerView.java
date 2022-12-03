@@ -62,14 +62,32 @@ public class CustomerView {
             CheckingAccount check = new CheckingAccount();
             if (check.checkAccount(Main.entity, email, password) == false) {
                 System.out.println("Success login");
-                this.showServices();
+                System.out.println("1- Check request");
+                System.out.println("2- Show services");
+                int choice = input.nextInt();
+                if(choice == 1)
+                {
+                    this.checkMyRequest();
+                }
+                else if(choice == 2) {
+                    this.showServices();
+                }
                 return true;
             } else {
                 System.out.println("Enter vaild account");
             }
         }
     }
-
+    public void checkMyRequest()
+    {
+        if(Main.currentCustomer.getRequest().isState() == true)
+        {
+            System.out.println("Accepted");
+        }
+        else {
+            System.out.println("Denied");
+        }
+    }
     public void showServices() {
         Service myService;
         System.out.println("Our services");

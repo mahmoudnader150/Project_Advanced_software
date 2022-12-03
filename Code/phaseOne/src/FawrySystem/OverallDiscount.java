@@ -3,7 +3,7 @@ package FawrySystem;
 public class OverallDiscount extends Discount{
 
 
-    OverallDiscount(Service service) {
+    public OverallDiscount(Service service) {
         super(service);
     }
 
@@ -18,7 +18,7 @@ public class OverallDiscount extends Discount{
 
     @Override
     public double getCost() {
-        double overallCost = super.getCost();
-        return overallCost-(this.percent*overallCost);
+        double overallCost = service.getCost();
+        return (overallCost-(0.1*overallCost));
     }
 }

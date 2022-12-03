@@ -2,8 +2,9 @@ package FawrySystem;
 
 public class Donations extends Service{
 
-    public Donations(double cost, String description) {
-        super(cost, description);
+    public Donations(double codst, String description) {
+        this.cost = cost;
+        this.description = description;
         this.fees = 4.3;
     }
     @Override

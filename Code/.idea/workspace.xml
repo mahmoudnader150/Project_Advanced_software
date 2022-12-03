@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d13fbe75-438b-4ca4-99b3-c5f46b2148f7" name="Changes" comment="Updated code(payment,service,form,controller)">
+    <list default="true" id="d13fbe75-438b-4ca4-99b3-c5f46b2148f7" name="Changes" comment="fixed some logics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AddingDiscount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AddingServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/AdminView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/IHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/IHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/OverallDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/OverallDiscount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/SpecificDiscount.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/SpecificDiscount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Vodafone.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Vodafone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/WeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SoftwareClassDiagram_1.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../SoftwareClassDiagram_1.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hussein Mohamed Elmo/Project_Advanced_software/Code&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Hussein Mohamed Elmo/Project_Advanced_software/Code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="FawrySystem" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FawrySystem.Main" />
@@ -79,7 +68,9 @@
       <workItem from="1669998489996" duration="32000" />
       <workItem from="1669998623601" duration="194000" />
       <workItem from="1669998844713" duration="8844000" />
-      <workItem from="1670063123893" duration="7855000" />
+      <workItem from="1670063123893" duration="8600000" />
+      <workItem from="1670072096394" duration="908000" />
+      <workItem from="1670073537104" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="Updated code(payment,service,form,controller)">
       <created>1670008553853</created>
@@ -88,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670008553853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed some logics">
+      <created>1670071118184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670071118184</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,17 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated code(payment,service,form,controller)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated code(payment,service,form,controller)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fixed some logics" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some logics" />
   </component>
 </project>

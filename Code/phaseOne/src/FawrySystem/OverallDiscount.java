@@ -12,6 +12,8 @@ public class OverallDiscount extends Discount{
     }
 
 
+
+    @Override
     public void setPercent(Double percent){
          this.percent = percent;
     }

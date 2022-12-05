@@ -1,11 +1,8 @@
 package FawrySystem;
 
 public abstract class Service {
-    double percent;
     double cost;
     String description;
-    ServiceProviderFactory obj;
-    Discount discount;
     boolean state;
     double fees;
     public void pay(Payment payment){

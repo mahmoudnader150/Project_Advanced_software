@@ -3,7 +3,7 @@ package FawrySystem;
 import java.util.ArrayList;
 
 public class CheckingAccount {
-    public Boolean checkAccount(FawrySystemEntity e,String email,String password){
+    public Boolean checkAccount(FawrySystemEntity e,String email,String password){ //This function is used to check if the customer has account or not
         ArrayList<Customer> customers = e.getCustomerAcc();
         for (int i = 0; i < customers.size(); i++)
         {

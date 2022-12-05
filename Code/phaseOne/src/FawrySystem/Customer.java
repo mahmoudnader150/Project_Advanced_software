@@ -61,6 +61,7 @@ public class Customer {
         this.password = password;
         this.phone = phone;
         this.fTime = false;
+        this.wallet.amount = 50;
     }
 
     public String getPhone() {
@@ -86,6 +87,5 @@ public class Customer {
     public void setWallet(Wallet wallet) {
         this.wallet = wallet;
     }
-
 
 }

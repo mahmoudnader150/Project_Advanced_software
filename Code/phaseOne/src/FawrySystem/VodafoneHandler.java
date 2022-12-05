@@ -3,9 +3,7 @@ package FawrySystem;
 public class VodafoneHandler implements IHandler{
 
     @Override
-    public boolean FormHandler(double amount) {
-      /* System.out.println("Vodafone Handler");
-         System.out.println("----------------");*/
+    public boolean FormHandler(double amount) { // the minimum amount to be paid is 10$
        if(amount<0){
            System.out.println("Invalid amount");
            return false;

@@ -12,16 +12,14 @@ public class SpecificDiscount extends Discount {
     }
 
 
-    public void setPercent(Double percent){
+    public void setPercent(Double percent) {
         this.percent = percent;
     }
 
-    public static class CheckingAccount {
-    }
     @Override
     public double getCost() {
         double overallCost = service.getCost();
-        String.format("%.5f",overallCost);
-        return overallCost-(0.3*overallCost);
+        String.format("%.5f", overallCost);
+        return overallCost - (0.3 * overallCost);
     }
 }

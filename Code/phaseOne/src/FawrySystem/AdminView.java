@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class AdminView {
-    public Boolean menu() {
+    public Boolean menu() { //login for admin
         System.out.println();
         while (true) {
             String name;
@@ -46,7 +46,7 @@ public class AdminView {
                 AdminController adminController = new AdminController();
                 adminController.checkRequest();
                 return;
-            }else if(choice==2){
+            }else if(choice==2){ // the admin which service he wants to add discount
                 for(int i=0;i<Main.entity.getServices().size();i++){
                     System.out.print("Do you want to add discount on : ");
                     System.out.print(Main.entity.getServices().get(i).getDescription());
@@ -56,7 +56,8 @@ public class AdminView {
                     thechoice = scs.nextLine();
                     thechoice = thechoice.toLowerCase();
                     if(thechoice.equals("yes")){
-                        Main.entity.getServices().get(i).state=true;
+//                        Main.entity.getServices().get(i).state=true;
+                        Main.entity.allDiscounts.add(Main.entity.getServices().get(i).getDescription());
                     }else{
                         continue;
                     }

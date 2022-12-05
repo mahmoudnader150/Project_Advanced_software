@@ -39,12 +39,4 @@ public class Admin {
     {
         refundRequests.add(rf);
     }
-    public void notifyRequests()
-    {
-        for (int i = 0; i <refundRequests.size(); i++)
-        {
-            boolean state = false;
-            refundRequests.get(i).update(state);
-        }
-    }
 }

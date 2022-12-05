@@ -12,16 +12,18 @@ public class WeForm extends Form {
         Scanner ss = new Scanner(System.in);
         System.out.println("WE Form");
         System.out.println("--------------");
+        System.out.println("You have: " + Main.currentCustomer.wallet.getAmount() + "$ In your wallet");
         while (true) {
             System.out.println("1- Do payment");
-            System.out.println("2- Refund request");
+            System.out.println("2- Refund request to wallet");
             System.out.println("3- Check Discount");
             System.out.println("4- Exit");
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
             CustomerController c1 = new CustomerController();
+            boolean isdone = false;
 
-            if (choice == 1) {
+            if (choice == 1 && !isdone) {
                 double amount=0.0;
                 boolean check = false;
                 while(check==false) {
@@ -43,10 +45,10 @@ public class WeForm extends Form {
                 System.out.println("Before: " + totalCost);
                 p1 = c1.setPaymentMethod(choice);
                 boolean flag = false;
-                if(service.state==true){
-                    service = c1.setDiscount(service);
-                    flag = true;
+                if(Main.currentCustomer.isfTime() == true){
+                    service = c1.setOverallDiscount(service);
                 }
+                service = c1.setSpecificDiscount(service);
                 System.out.println("After: " + service.getCost());
                 if(flag==false){
                     System.out.println(" (Admin didn't add discount)");
@@ -80,6 +82,10 @@ public class WeForm extends Form {
             else if(choice == 4)
             {
                 return;
+            }
+            else if(choice == 1 && isdone == true)
+            {
+                System.out.println("You have already paid this service");
             }
             else {
                 System.out.println("Enter valid choice");

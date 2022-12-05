@@ -3,8 +3,7 @@ package FawrySystem;
 
 
 public abstract class ServiceProviderFactory {
-    public Form f1;
-    //public IHandler h1;
+    public Form form;
     public String name;
 
     ServiceProviderFactory(String name){
@@ -14,9 +13,8 @@ public abstract class ServiceProviderFactory {
 //    public abstract IHandler createHandler();
 
     public void setForm(Service service){
-        f1 = createForm();
-        this.f1.showForm(service);
-//        h1 = createHandler();
+        form = createForm();
+        this.form.showForm(service);
     }
 
     public void setName(String name) {

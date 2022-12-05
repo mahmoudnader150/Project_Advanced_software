@@ -29,19 +29,8 @@ public class CashPayment extends Payment{
            if(this.service.cost * this.discount.getPercent() <= this.amount && this.confirmPayment() ){
                return true;
            }
-       }else{
-
        }
-
         return false;
     }
 
-    /*decrement money amount*/
-    @Override
-    void payBill(){
-        if(checkAmount()){
-            this.amount-=this.service.cost * this.discount.percent;
-            System.out.println("The Price after Discount : "+(this.service.cost * this.discount.percent));
-        }
-    }
 }

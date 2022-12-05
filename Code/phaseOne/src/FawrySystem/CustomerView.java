@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class CustomerView {
     public void Menu() {
         int choice;
-        System.out.println("Enter 1- Sign up");
+        System.out.println("Enter 1- Sign up"); //The customer will choose if he wants to sign in or signup
         System.out.println("2- Sign in");
         choice = Main.scanner.nextInt();
         if (choice == 1) {
@@ -26,7 +26,6 @@ public class CustomerView {
             String username, email, password;
             System.out.print("Enter user name: ");
             username = input.nextLine();
-//            System.out.println();
 
             System.out.print("Enter user Email: ");
             email = input.nextLine();
@@ -52,7 +51,7 @@ public class CustomerView {
 
     public boolean Signin() {
         while (true) {
-            String username, email, password;
+            String username, email, password; //The customer will type his information
             Scanner input = new Scanner(System.in);
             System.out.print("Enter user name: ");
             username = input.nextLine();
@@ -63,16 +62,16 @@ public class CustomerView {
             CheckingAccount check = new CheckingAccount();
             if (check.checkAccount(Main.entity, email, password) == false) {
                 System.out.println("Success login");
-                System.out.println("1- Check request");
-                System.out.println("2- Show services");
-                System.out.println("3- Show Wallet");
+                System.out.println("1- Show services");
+                System.out.println("2- Show Wallet");
+                System.out.println("3- Check request");
                 int choice = input.nextInt();
-                if(choice == 1) {
+                if(choice == 3) {
                     this.checkMyRequest();
                 }
-                else if(choice == 2) {
+                else if(choice == 1) {
                     this.showServices();
-                }else if(choice == 3){
+                }else if(choice == 2){
                     this.walletDetails();
                 }
                 return true;
@@ -81,33 +80,33 @@ public class CustomerView {
             }
         }
     }
-    public void walletDetails(){
+    public void walletDetails(){ // this function shows the customer's wallet
         System.out.println("Wallet amount is: "+Main.currentCustomer.getWallet().getAmount());
     }
 
 
     public void checkMyRequest()
     {
-        if(Main.currentCustomer.getRequest().isState() == true)
-        {
+        if(Main.currentCustomer.getRequest().isState() == true) // isState == true iff the customer's request is accepted
+        {                                                       // from the admin
             System.out.println("Accepted");
         }
         else {
             System.out.println("Denied");
         }
     }
-    public void showServices() {
+    public void showServices() {                //this function show all service to the customer
         Service myService;
         System.out.println("Our services");
         ArrayList<Service> services = Main.entity.getServices();
         for (int i = 0; i < services.size(); i++) {
-            System.out.println((i + 1) + "- " + services.get(i).getDescription());
+            System.out.println((i + 1) +" "+ services.get(i).getDescription());
         }
         Scanner sc1 = new Scanner(System.in);
         int choice;
         choice = sc1.nextInt();
 
-        myService = services.get(choice - 1); // Service........
+        myService = services.get(choice - 1); // customer's service ........
 
         System.out.println("Choose service provider");
         for (int i = 0; i < Main.entity.getServiceProviders().size(); i++)

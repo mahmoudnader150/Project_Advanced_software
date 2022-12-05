@@ -6,16 +6,20 @@ import java.util.Map.Entry;
 public class FawrySystemEntity {
     public ArrayList<Customer>customers;
     public ArrayList<ServiceProviderFactory>serviceProviders;
-    public ArrayList<Entry<Customer,Service>>transactions;
     public ArrayList<Service>services;
     public ArrayList<RefundRequest>refundRequests;
 
-
+    public ArrayList<String>allDiscounts;
     public FawrySystemEntity() {
         this.customers = new ArrayList<>();
         this.serviceProviders = new ArrayList<>();
         this.services = new ArrayList<>();
         this.refundRequests = new ArrayList<>();
+        this.allDiscounts = new ArrayList<>();
+    }
+    public void addDiscount(String discount)
+    {
+        allDiscounts.add(discount);
     }
 
     public void addRequest(RefundRequest refundRequest)
@@ -26,7 +30,7 @@ public class FawrySystemEntity {
     {
         refundRequests.remove(refundRequest);
     }
-    public void notifyRequest()
+    public void notifyRequest() //the customer should notify all requests if it's accepted or not
     {
         for (int i = 0; i < refundRequests.size(); i++)
         {
@@ -46,6 +50,7 @@ public class FawrySystemEntity {
     public void AddCustomerAcc(Customer c){
         customers.add(c);
     }
+
     public void AddServiceProviderFactory (ServiceProviderFactory  sp){
         serviceProviders.add(sp);
     }

@@ -1,6 +1,5 @@
 package FawrySystem;
 
-import java.sql.Ref;
 import java.util.Scanner;
 
 public class VodafoneForm extends Form{

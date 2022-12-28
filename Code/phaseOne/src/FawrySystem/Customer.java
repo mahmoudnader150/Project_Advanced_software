@@ -9,9 +9,9 @@ public class Customer {
     boolean fTime;
     public String phone;
 
-    public ArrayList<Service> getServices() {
-        return services;
-    }
+//    public ArrayList<Service> getServices() {
+//        return services;
+//    }
 
     public Wallet wallet = new Wallet();
     public Payment p1;

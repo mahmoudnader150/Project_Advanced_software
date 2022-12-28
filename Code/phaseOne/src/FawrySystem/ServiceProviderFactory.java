@@ -1,7 +1,6 @@
 package FawrySystem;
 
 
-
 public abstract class ServiceProviderFactory {
     public Form form;
     public String name;

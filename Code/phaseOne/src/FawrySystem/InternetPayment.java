@@ -1,6 +1,6 @@
 package FawrySystem;
 
-public class InternetPayment extends Service{
+public class InternetPayment extends Service {
 
     public InternetPayment(double cost, String description) {
         this.cost = cost;

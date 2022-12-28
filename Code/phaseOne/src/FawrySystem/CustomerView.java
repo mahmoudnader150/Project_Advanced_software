@@ -1,11 +1,10 @@
 package FawrySystem;
 
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class CustomerView {
-    public void Menu() {
+    public void Menu() { // /customer/menu/1
         int choice;
         System.out.println("Enter 1- Sign up"); //The customer will choose if he wants to sign in or signup
         System.out.println("2- Sign in");
@@ -38,12 +37,12 @@ public class CustomerView {
 
             CheckingAccount check = new CheckingAccount();
             if (check.checkAccount(Main.entity, email, password)) {
-                System.out.println("Created account Successfully");
+                System.out.println("Created account Successfully"); // return
                 Main.entity.AddCustomerAcc(new Customer(username, email, password,number));
                 this.Signin();
                 break;
             } else {
-                System.out.println("This is already existing account");
+                System.out.println("This is already existing account"); //return
                 System.out.println("Enter another account");
             }
         }

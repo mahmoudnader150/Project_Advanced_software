@@ -1,6 +1,6 @@
 package FawrySystem;
 
-public class LandlineServices extends Service{
+public class LandlineServices extends Service {
 
 
     public LandlineServices(double cost, String description) {

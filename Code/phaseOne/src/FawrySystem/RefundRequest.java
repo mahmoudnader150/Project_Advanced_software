@@ -1,5 +1,7 @@
 package FawrySystem;
 
+import FawrySystem.Main;
+
 public class RefundRequest {
     public boolean state;
     public String transactionName;

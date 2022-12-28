@@ -2,7 +2,7 @@ package FawrySystem;
 
 import java.util.ArrayList;
 import java.util.*;
-import java.util.Map.Entry;
+
 public class FawrySystemEntity {
     public ArrayList<Customer>customers;
     public ArrayList<ServiceProviderFactory>serviceProviders;

@@ -1,5 +1,7 @@
 package FawrySystem;
 
+import FawrySystem.Payment;
+
 public abstract class Service {
     double cost;
     String description;

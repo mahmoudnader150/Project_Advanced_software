@@ -1,4 +1,5 @@
 package FawrySystem;
+
 import java.util.ArrayList;
 
 public class Admin {

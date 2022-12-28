@@ -1,6 +1,6 @@
 package FawrySystem;
 
-public class Donations extends Service{
+public class Donations extends Service {
 
     public Donations(double codst, String description) {
         this.cost = cost;

@@ -5,7 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13fbe75-438b-4ca4-99b3-c5f46b2148f7" name="Changes" comment="fixed some logics">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/Customer/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/Models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/Models/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/Models/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Controllers/ShowServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/Donations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/InternetPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/LandlineServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/MobilRecharge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/RefundRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FawrySystem/src/main/java/com/FawrySystem/FawrySystem/myService/Models/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Class diagram/SoftwareClassDiagram_1.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Class diagram/SoftwareClassDiagram_1.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/AdminView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/AdminView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/CashPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/CashPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/CheckingAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/CheckingAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/CreditCardPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/CreditCardPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/CustomerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/CustomerView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Discount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Donations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Donations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/FawrySystemEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/FawrySystemEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/InternetPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/InternetPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/LandlineServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/LandlineServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/MobilRecharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/MobilRecharge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/OverallDiscount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/OverallDiscount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/RefundRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/RefundRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/ServiceProviderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/ServiceProviderFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/SpecificDiscount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/SpecificDiscount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Vodafone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Vodafone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/VodafoneForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/VodafoneForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/VodafoneHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/VodafoneHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/Wallet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/Wallet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/We.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/We.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/WeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/WeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Code/FawrySystem/WeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Code/FawrySystem/WeHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/phaseOne.iml" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/phaseOne.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Donations.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Donations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/FawrySystemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/InternetPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/InternetPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/LandlineServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/LandlineServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/MobilRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/MobilRecharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/RefundRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/RefundRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/ServiceProviderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/ServiceProviderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/VodafoneForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phaseOne/src/FawrySystem/We.java" beforeDir="false" afterPath="$PROJECT_DIR$/phaseOne/src/FawrySystem/We.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +92,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Hussein Mohamed Elmo/Project_Advanced_software/Code",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/3rd year 1st term/SW2/Project/Project_Advanced_software/Code&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="FawrySystem" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FawrySystem.Main" />
@@ -71,6 +130,12 @@
       <workItem from="1670063123893" duration="8600000" />
       <workItem from="1670072096394" duration="908000" />
       <workItem from="1670073537104" duration="1524000" />
+      <workItem from="1671797162121" duration="5803000" />
+      <workItem from="1671807150222" duration="422000" />
+      <workItem from="1671813505306" duration="3279000" />
+      <workItem from="1671823996413" duration="2000" />
+      <workItem from="1671824208652" duration="8000" />
+      <workItem from="1671824376693" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Updated code(payment,service,form,controller)">
       <created>1670008553853</created>

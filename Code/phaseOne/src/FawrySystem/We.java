@@ -1,6 +1,6 @@
 package FawrySystem;
 
-public class We extends ServiceProviderFactory{
+public class We extends ServiceProviderFactory {
 
     We(String name){
        super(name);

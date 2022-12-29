@@ -2,7 +2,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Model;
 
 import java.util.HashMap;
 
-public class WeInternet extends ServiceProviderFactory {
+public class WeInternet extends ServiceProvider {
     String phone;
 
     @Override

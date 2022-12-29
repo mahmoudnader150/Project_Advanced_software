@@ -3,7 +3,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Model;
 
 import java.util.HashMap;
 
-public abstract class ServiceProviderFactory {
+public abstract class ServiceProvider {
     public String name;
     public double fees, amount = 0;
     public boolean state;
@@ -11,7 +11,7 @@ public abstract class ServiceProviderFactory {
     public double getFees() {
         return fees;
     }
-    public ServiceProviderFactory(){}
+    public ServiceProvider(){}
 
     public double getAmount() {
         return amount;
@@ -33,7 +33,7 @@ public abstract class ServiceProviderFactory {
         this.state = state;
     }
 
-    public ServiceProviderFactory(String name){
+    public ServiceProvider(String name){
         this.name=name;
         this.fees = 5;
     }

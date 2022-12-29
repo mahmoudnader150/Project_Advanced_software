@@ -1,6 +1,5 @@
 package com.FawrySystem.FawrySystem.RefundRequest.Model;
 
-import com.FawrySystem.FawrySystem.CustomerLogin.Controller.LoginController;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 
 public class RefundRequest {

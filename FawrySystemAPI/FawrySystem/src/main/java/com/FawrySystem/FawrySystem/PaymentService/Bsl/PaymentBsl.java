@@ -1,9 +1,8 @@
 package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 
 //import com.FawrySystem.FawrySystem.PaymentService.Model.MyService;
-import com.FawrySystem.FawrySystem.CustomerLogin.Bsl.LoginBsl;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
-import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProviderFactory;
+import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProvider;
 import com.FawrySystem.FawrySystem.PaymentService.Model.PaymentTransaction;
 import org.springframework.stereotype.Service;
 //import static com.FawrySystem.FawrySystem.CustomerLogin.Controller.LoginController.currentCustomer;
@@ -33,30 +32,30 @@ public class PaymentBsl {
         {
             return "You must login first";
         }
-        ServiceBsl c1 = new ServiceBsl();
+        ServiceProviderFactory c1 = new ServiceProviderFactory();
 
         DiscountLogic d1 = new DiscountLogic();
 
-        ServiceProviderFactory myServiceProviderFactory = c1.serviceProviderFactory(serviceProvider);//ServiceProviderFactory...
+        ServiceProvider myServiceProvider = c1.serviceProviderFactory(serviceProvider);//ServiceProviderFactory...
 
-        if(myServiceProviderFactory.handleInput(Data) == false)
+        if(myServiceProvider.handleInput(Data) == false)
         {
             return "Enter valid data";
         }
 
-        myServiceProviderFactory.setAmount(amount);
+        myServiceProvider.setAmount(amount);
 
         if(currentCustomer.isfTime() == false) // first time
         {
-            myServiceProviderFactory = d1.setOverallDiscount(currentCustomer,myServiceProviderFactory);
+            myServiceProvider = d1.setOverallDiscount(currentCustomer, myServiceProvider);
         }
         if(serviceProvider.toLowerCase() .equals("vodafonecash")) // add special discount
         {
-            myServiceProviderFactory = d1.setSpecificDiscount(myServiceProviderFactory);
+            myServiceProvider = d1.setSpecificDiscount(myServiceProvider);
         }
 
 
-        double totalCost = (myServiceProviderFactory.getCost());
+        double totalCost = (myServiceProvider.getCost());
         String formattedValue = String.format("%.2f", totalCost);
 
         paymentTransactions.add(new PaymentTransaction(serviceName, formattedValue, currentCustomer, serviceProvider));

@@ -2,7 +2,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Model;
 
 import java.util.HashMap;
 
-public class VodafoneInternet extends ServiceProviderFactory{
+public class VodafoneInternet extends ServiceProvider {
     String mobileNumber;
     @Override
     public boolean handleInput(HashMap<String, Object> Data) {

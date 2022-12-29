@@ -1,6 +1,6 @@
 package com.FawrySystem.FawrySystem.RefundRequest.Controller;
 
-import com.FawrySystem.FawrySystem.CustomerLogin.Controller.LoginController;
+import com.FawrySystem.FawrySystem.CustomerLogin.Controller.CustomerController;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 import com.FawrySystem.FawrySystem.RefundRequest.Bsl.MakeRefund;
 import com.FawrySystem.FawrySystem.RefundRequest.Model.RefundRequest;
@@ -18,11 +18,11 @@ public class AdminRefundRequestController {
     MakeRefund makeRefund;
 
     @Autowired
-    LoginController loginController;
+    CustomerController customerController;
     @PutMapping(value = "/{userName}/requestreply")
     public String RequestReply(@PathVariable String userName, @RequestBody RefundRequest refundRequest)
     {
-        Customer currentCustomer= loginController.getAccount(userName);
+        Customer currentCustomer= customerController.getAccount(userName);
         return makeRefund.notifyRequest(currentCustomer, refundRequest);
     }
 

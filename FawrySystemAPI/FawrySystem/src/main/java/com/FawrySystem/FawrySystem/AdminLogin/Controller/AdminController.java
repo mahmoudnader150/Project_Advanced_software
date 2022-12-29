@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/admin")
-public class LogicAdmin {
+public class AdminController {
 
     @Autowired
     private AdminBsl adminBsl;

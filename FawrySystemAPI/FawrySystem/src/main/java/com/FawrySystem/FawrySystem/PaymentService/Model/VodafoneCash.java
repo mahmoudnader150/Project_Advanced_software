@@ -2,7 +2,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Model;
 
 import java.util.HashMap;
 
-public class VodafoneCash extends ServiceProviderFactory{
+public class VodafoneCash extends ServiceProvider {
     String phone;
 
     @Override

@@ -1,6 +1,6 @@
 package com.FawrySystem.FawrySystem.RefundRequest.Controller;
 
-import com.FawrySystem.FawrySystem.CustomerLogin.Controller.LoginController;
+import com.FawrySystem.FawrySystem.CustomerLogin.Controller.CustomerController;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 import com.FawrySystem.FawrySystem.RefundRequest.Bsl.CheckMyRequest;
 import com.FawrySystem.FawrySystem.RefundRequest.Bsl.MakeRefund;
@@ -20,17 +20,17 @@ public class RefundRequestController {
     MakeRefund makeRefund;
 
     @Autowired
-    LoginController loginController;
+    CustomerController customerController;
 
     @GetMapping(value = "/{userName}/checkrefund")
     public String checkMyRequest(@PathVariable String userName) {
-        Customer customer = loginController.getAccount(userName);
+        Customer customer = customerController.getAccount(userName);
         return myRequest.CheckMyRequest(customer);
     }
 
     @PostMapping(value = "/{userName}/makerefund")
     public String makeRefundRequest(@PathVariable String userName, @RequestBody HashMap<String, Object> Data) {
-        Customer currrentCustomer = loginController.getAccount(userName);
+        Customer currrentCustomer = customerController.getAccount(userName);
         String transactionName = (String) Data.get("transactionName");
         double amount = (double) Data.get("amount");
 

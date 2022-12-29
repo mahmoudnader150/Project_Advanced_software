@@ -1,21 +1,21 @@
 package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 
 
-import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProviderFactory;
+import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProvider;
 
-public abstract class Discount extends ServiceProviderFactory {
+public abstract class Discount extends ServiceProvider {
     protected double percent;
-    public ServiceProviderFactory serviceProviderFactory;
+    public ServiceProvider serviceProvider;
 
-    public Discount(ServiceProviderFactory serviceProviderFactory) {
-        serviceProviderFactory.setState(true);
-        this.serviceProviderFactory = serviceProviderFactory;
+    public Discount(ServiceProvider serviceProvider) {
+        serviceProvider.setState(true);
+        this.serviceProvider = serviceProvider;
     }
 
 
     public double getCost(){
 
-        return serviceProviderFactory.getCost();
+        return serviceProvider.getCost();
     }
 
     public Double getPercent() {

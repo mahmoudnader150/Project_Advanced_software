@@ -1,10 +1,10 @@
 package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 import com.FawrySystem.FawrySystem.PaymentService.Model.*;
-import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProviderFactory;
+import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProvider;
 
-public class ServiceBsl {
+public class ServiceProviderFactory {
 
-    public ServiceProviderFactory serviceProviderFactory(String choice) {
+    public ServiceProvider serviceProviderFactory(String choice) {
         choice = choice.toLowerCase();
         if (choice.equals("vodafonecash")) {    //setting service provider for the customer
             return new VodafoneCash();

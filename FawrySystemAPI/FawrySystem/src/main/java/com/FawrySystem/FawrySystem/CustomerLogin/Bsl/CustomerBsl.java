@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 @Service
-public class LoginBsl {
+public class CustomerBsl {
     ArrayList<Customer> customers = new ArrayList<>();
     public String checkAccount(Customer c){ //This function is used to check if the customer has account or not
         for (int i = 0; i < customers.size(); i++)

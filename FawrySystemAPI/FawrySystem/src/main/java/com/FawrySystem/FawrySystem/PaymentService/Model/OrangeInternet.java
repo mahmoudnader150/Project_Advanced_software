@@ -2,7 +2,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Model;
 
 import java.util.HashMap;
 
-public class OrangeInternet extends ServiceProviderFactory {
+public class OrangeInternet extends ServiceProvider {
     String phone;
 
     @Override

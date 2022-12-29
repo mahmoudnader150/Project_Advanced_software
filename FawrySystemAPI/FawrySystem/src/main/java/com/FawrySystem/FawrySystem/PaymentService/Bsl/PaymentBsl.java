@@ -1,6 +1,5 @@
 package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 
-//import com.FawrySystem.FawrySystem.PaymentService.Model.MyService;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProvider;
 import com.FawrySystem.FawrySystem.PaymentService.Model.PaymentTransaction;
@@ -12,8 +11,7 @@ import java.util.HashMap;
 
 @Service
 public class PaymentBsl {
-//    ArrayList<MyService> services = new ArrayList<>();
-//    ArrayList<RefundRequest> refundRequests = new ArrayList<>();
+
     ArrayList<PaymentTransaction>paymentTransactions = new ArrayList<>();
 
     public ArrayList<PaymentTransaction> getPaymentTransaction() {
@@ -36,7 +34,7 @@ public class PaymentBsl {
 
         DiscountLogic d1 = new DiscountLogic();
 
-        ServiceProvider myServiceProvider = c1.serviceProviderFactory(serviceProvider);//ServiceProviderFactory...
+        ServiceProvider myServiceProvider = c1.setServiceProvider(serviceProvider);//ServiceProviderFactory...
 
         if(myServiceProvider.handleInput(Data) == false)
         {
@@ -64,9 +62,9 @@ public class PaymentBsl {
     }
     public String pay(Customer currentCustomer, String choice, double amount)
     {
-        PaymentMethodLogic paymentMethodLogic = new PaymentMethodLogic();
+        PaymentFactory paymentFactory = new PaymentFactory();
 
-        Payment payment = paymentMethodLogic.setPaymentMethod(choice, currentCustomer);
+        Payment payment = paymentFactory.setPaymentMethod(choice, currentCustomer);
 
         return payment.pay(amount);
     }

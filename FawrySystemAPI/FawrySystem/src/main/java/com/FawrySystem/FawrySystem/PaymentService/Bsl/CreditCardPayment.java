@@ -3,19 +3,11 @@ package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Wallet;
 
 public class CreditCardPayment extends Payment {
-    public Wallet customerWallet;
     public String name;
     public String cardNumber;
     public String cvv;
     public String dateOfExpiry;
 
-    public Wallet getCustomerWallet() {
-        return customerWallet;
-    }
-
-    public void setCustomerWallet(Wallet customerWallet) {
-        this.customerWallet = customerWallet;
-    }
 
     public String getName() {
         return name;

@@ -4,7 +4,7 @@ import com.FawrySystem.FawrySystem.PaymentService.Model.ServiceProvider;
 
 public class ServiceProviderFactory {
 
-    public ServiceProvider serviceProviderFactory(String choice) {
+    public ServiceProvider setServiceProvider(String choice) {
         choice = choice.toLowerCase();
         if (choice.equals("vodafonecash")) {    //setting service provider for the customer
             return new VodafoneCash();

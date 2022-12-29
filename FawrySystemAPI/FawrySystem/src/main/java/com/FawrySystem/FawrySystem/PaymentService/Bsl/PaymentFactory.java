@@ -2,7 +2,7 @@ package com.FawrySystem.FawrySystem.PaymentService.Bsl;
 
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 
-public class PaymentMethodLogic {
+public class PaymentFactory {
     public Payment setPaymentMethod(String choice, Customer currentCustomer) { // setting payment method for the customer
         if (choice.toLowerCase().equals("creditcardpayment")) {
             return new CreditCardPayment();

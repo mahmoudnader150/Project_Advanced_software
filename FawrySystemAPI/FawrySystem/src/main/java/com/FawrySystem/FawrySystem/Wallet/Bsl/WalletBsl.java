@@ -16,7 +16,6 @@ public class WalletBsl {
     }
 
     public ArrayList<WalletTransaction> getWalletTransactions() {
-        System.out.println(walletTransactions.size());
         return walletTransactions;
     }
 

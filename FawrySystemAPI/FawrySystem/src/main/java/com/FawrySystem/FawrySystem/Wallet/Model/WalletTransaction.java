@@ -6,7 +6,10 @@ public class WalletTransaction {
     double addedAmount;
     Customer customer;
 
-
+    public WalletTransaction(Customer customer, double addedAmount) {
+        this.customer = customer;
+        this.addedAmount = addedAmount;
+    }
     public Customer getCustomer() {
         return customer;
     }
@@ -23,8 +26,4 @@ public class WalletTransaction {
         this.addedAmount = addedAmount;
     }
 
-    public WalletTransaction(Customer customer, double addedAmount) {
-        this.customer = customer;
-        this.addedAmount = addedAmount;
-    }
 }

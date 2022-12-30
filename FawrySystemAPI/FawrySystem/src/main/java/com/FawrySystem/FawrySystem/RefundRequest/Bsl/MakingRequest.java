@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class MakeRefund {
+public class MakingRequest {
     ArrayList<RefundRequest> refundRequests = new ArrayList<>();
 
     public ArrayList<RefundRequest> getRefundRequests() {

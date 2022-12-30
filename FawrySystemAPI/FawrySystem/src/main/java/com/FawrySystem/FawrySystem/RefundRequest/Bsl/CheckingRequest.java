@@ -4,8 +4,8 @@ import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CheckMyRequest {
-    public String CheckMyRequest(Customer currentCustomer) {
+public class CheckingRequest {
+    public String checkMyRequest(Customer currentCustomer) {
         if(currentCustomer.getRefundRequest() == null)
         {
             return "No refund request found";

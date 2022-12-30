@@ -2,8 +2,8 @@ package com.FawrySystem.FawrySystem.RefundRequest.Controller;
 
 import com.FawrySystem.FawrySystem.CustomerLogin.Controller.CustomerController;
 import com.FawrySystem.FawrySystem.CustomerLogin.Model.Customer;
-import com.FawrySystem.FawrySystem.RefundRequest.Bsl.CheckMyRequest;
-import com.FawrySystem.FawrySystem.RefundRequest.Bsl.MakeRefund;
+import com.FawrySystem.FawrySystem.RefundRequest.Bsl.CheckingRequest;
+import com.FawrySystem.FawrySystem.RefundRequest.Bsl.MakingRequest;
 import com.FawrySystem.FawrySystem.RefundRequest.Model.RefundRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +15,9 @@ import java.util.HashMap;
 @RequestMapping("/refund")
 public class RefundRequestController {
     @Autowired
-    CheckMyRequest myRequest;
+    CheckingRequest myRequest;
     @Autowired
-    MakeRefund makeRefund;
+    MakingRequest makingRequest;
 
     @Autowired
     CustomerController customerController;
@@ -25,7 +25,7 @@ public class RefundRequestController {
     @GetMapping(value = "/{userName}/checkrefund")
     public String checkMyRequest(@PathVariable String userName) {
         Customer customer = customerController.getAccount(userName);
-        return myRequest.CheckMyRequest(customer);
+        return myRequest.checkMyRequest(customer);
     }
 
     @PostMapping(value = "/{userName}/makerefund")
@@ -35,7 +35,7 @@ public class RefundRequestController {
         double amount = (double) Data.get("amount");
 
         currrentCustomer.setRefundRequest(new RefundRequest(transactionName, amount));
-        makeRefund.addRequest(currrentCustomer.getRefundRequest());
+        makingRequest.addRequest(currrentCustomer.getRefundRequest());
 
         return "Refund request is sent to the admin";
     }

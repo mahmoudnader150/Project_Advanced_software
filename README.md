@@ -1,6 +1,7 @@
 # Project_Advanced_software
 i) How to build the project in eclipse EE:
-    Import project as "Existing Maven Project" 
+    Import project as "Existing Maven Project"
+    then Select the "FawrySystemApplication.JAVA" class and right click then Run As "Java Application"
 ii) The project depends on Java 11
 iii) Examples for using the API correctecly: 
 Note: the data type of variable "amount" and "totalCost" is double

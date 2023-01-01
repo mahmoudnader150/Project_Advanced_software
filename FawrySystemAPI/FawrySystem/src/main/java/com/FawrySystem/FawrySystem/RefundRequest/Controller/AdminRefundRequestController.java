@@ -26,7 +26,7 @@ public class AdminRefundRequestController {
         return makingRequest.notifyRequest(currentCustomer, refundRequest);
     }
 
-    @GetMapping(value = "/getrefundrequests")
+    @GetMapping(value = "/getRefundRequests")
     public ArrayList<RefundRequest> GetRefundRequests()
     {
         return makingRequest.getRefundRequests();

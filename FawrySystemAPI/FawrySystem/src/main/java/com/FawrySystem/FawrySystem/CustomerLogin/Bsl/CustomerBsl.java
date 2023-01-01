@@ -12,7 +12,8 @@ public class CustomerBsl {
     public String checkAccount(Customer c){ //This function is used to check if the customer has account or not
         for (int i = 0; i < customers.size(); i++)
         {
-            if(customers.get(i).getEmail().equals(c.getEmail()) && customers.get(i).getPassword().equals(c.getPassword())){
+            if(customers.get(i).getEmail().equals(c.getEmail()) && customers.get(i).getPassword().equals(c.getPassword())
+                    && customers.get(i).getUserName().equals(c.getUserName())){
                 return "Successfully login";
             }
         }

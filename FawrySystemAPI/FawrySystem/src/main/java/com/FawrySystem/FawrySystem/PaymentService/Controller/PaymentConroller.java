@@ -16,7 +16,7 @@ public class PaymentConroller {
     @Autowired
     CustomerController customerController;
 
-    @PostMapping(value = "/{userName}/getcost")
+    @GetMapping(value = "/{userName}/getcost")
     public String getCost(@PathVariable String userName, @RequestBody HashMap<String, Object> Data){
         Customer currentCustomer = customerController.getAccount(userName);
         return paymentBsl.getCost(currentCustomer,Data);

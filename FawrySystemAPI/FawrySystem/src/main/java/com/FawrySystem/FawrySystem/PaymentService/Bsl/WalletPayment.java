@@ -14,7 +14,7 @@ public class WalletPayment extends Payment{
         if(amount >= customer.getWallet().getAmount())
         {
             customer.getWallet().setAmount(-amount);
-            return "Paid with wallet";
+            return amount + " Paid with wallet";
         }
         else {
             return "No sufficient amount";
